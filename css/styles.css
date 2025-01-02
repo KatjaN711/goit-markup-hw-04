@@ -72,7 +72,6 @@ button {
 }
 .nav-item {
   padding-top: 24px;
-  padding-bottom: 24px;
 }
 .nav-item-link {
   font-size: 16px;
@@ -81,11 +80,26 @@ button {
   letter-spacing: 0.02em;
   color: #2e2f42;
   text-decoration: none;
-  padding: 24px 0;
+  transition: background-color 250ms ease-in-out;
 }
 .nav-item-link:hover,
 .nav-item-link:focus {
   color: #404bbf;
+}
+.studio {
+  display: block;
+}
+.nav-item .underline {
+  color: #404bbf;
+}
+.nav-item .underline::after {
+  content: "";
+  width: 48px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
+  display: block;
+  margin-top: 20px;
 }
 .address {
   font-style: normal;
@@ -103,6 +117,7 @@ button {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: #434455;
+  transition: background-color 250ms ease-in-out;
 }
 .address-link:hover,
 .address-link:focus {
@@ -159,6 +174,7 @@ button {
   background-color: #4d5ae5;
   border-radius: 4px;
   cursor: pointer;
+  transition: background-color 250ms ease-in-out;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -275,13 +291,14 @@ button {
   height: 40px;
   border-radius: 50%;
   background-color: #4d5ae5;
+  transition: background-color 250ms ease-in-out;
 }
 .team-icon {
   fill: #f4f4fd;
 }
 .icon-link:hover,
 .icon-link:focus {
-  background-color: #31d0aa;
+  background-color: #404bbf;
 }
 /* #endregion */
 /* #region portfolio */
@@ -366,5 +383,46 @@ footer .span-logo {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+}
+/* .social-media {
+  display: block;
+  width: 208px;
+  height: 80px;
+} */
+.social-icons-foot {
+  width: 208px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  margin: auto;
+}
+.icon-link-foot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  transition: background-color 250ms ease-in-out;
+}
+.team-icon-foot {
+  fill: #f4f4fd;
+}
+.media-foot {
+  /* font-family: var(--font-family);
+  font-weight: 500; */
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  display: block;
+  width: 96px;
+}
+.footer-soc:hover,
+.footer-soc:focus {
+  background-color: #31d0aa;
 }
 /* #endregion */
