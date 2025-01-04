@@ -214,6 +214,7 @@ button {
   height: 112px;
   border: 1px solid #8e8f99;
   border-radius: 4px;
+  margin-bottom: 8px;
 }
 .features-list {
   display: flex;
@@ -223,6 +224,7 @@ button {
 .features-item {
   width: calc((100% - 72px) / 4);
   height: 104px;
+  margin-bottom: 8px;
 }
 
 .features-title {
