@@ -80,7 +80,7 @@ button {
   letter-spacing: 0.02em;
   color: #2e2f42;
   text-decoration: none;
-  transition: background-color 250ms ease-in-out;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-item-link:hover,
 .nav-item-link:focus {
@@ -117,7 +117,7 @@ button {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: #434455;
-  transition: background-color 250ms ease-in-out;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address-link:hover,
 .address-link:focus {
@@ -174,7 +174,7 @@ button {
   background-color: #4d5ae5;
   border-radius: 4px;
   cursor: pointer;
-  transition: background-color 250ms ease-in-out;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -259,21 +259,23 @@ button {
 }
 .team-list {
   display: flex;
+  width: 264px;
+  height: 428px;
   gap: 24px;
   justify-content: space-around;
 }
 .team-item {
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
-  /* box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08); */
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: var(--white);
 }
 .team-member {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 32px 0;
+  padding: 32px 0 8px;
 }
 .image-name {
   font-weight: 500;
@@ -307,7 +309,7 @@ button {
   height: 40px;
   border-radius: 50%;
   background-color: #4d5ae5;
-  transition: background-color 250ms ease-in-out;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-icon {
   fill: #f4f4fd;
@@ -339,8 +341,32 @@ button {
   row-gap: 48px;
 }
 .portfolio-item {
+  position: relative;
+  overflow: hidden;
   width: calc((100% - 48px) / 3);
   /* height: 420px; */
+}
+.overlay {
+  position: absolute;
+  transform: translateX(100%);
+  top: 0;
+  left: 0;
+  overflow: auto;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #4d5ae5;
+  padding: 40px 32px 164px 32px;
+}
+.overlay-link:hover .overlay,
+.overlay-link:focus .overlay {
+  transform: translateX(0);
+}
+.overlay-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  overflow: scroll;
 }
 .port-label {
   display: flex;
@@ -433,7 +459,7 @@ footer .span-logo {
   height: 40px;
   border-radius: 50%;
   background-color: #4d5ae5;
-  transition: background-color 250ms ease-in-out;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-icon-foot {
   fill: #f4f4fd;
