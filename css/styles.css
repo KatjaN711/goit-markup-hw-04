@@ -348,7 +348,7 @@ button {
 }
 .overlay {
   position: absolute;
-  transform: translateX(100%);
+  transform: translateY(150%);
   top: 0;
   left: 0;
   overflow: auto;
@@ -358,7 +358,7 @@ button {
 }
 .overlay-link:hover .overlay,
 .overlay-link:focus .overlay {
-  transform: translateX(0);
+  transform: translateY(0);
 }
 .overlay-text {
   font-weight: 400;
