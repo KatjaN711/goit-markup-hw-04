@@ -225,7 +225,6 @@ button {
 }
 .features-item {
   width: calc((100% - 72px) / 4);
-  height: 104px;
   margin-bottom: 8px;
 }
 .images-f {
