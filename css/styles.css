@@ -517,7 +517,7 @@ button {
   background-color: #2e2f42;
   min-height: 312px;
   padding-left: 156px;
-  padding-right: 120px;
+  margin-right: 120px;
 }
 
 .logo {
