@@ -23,7 +23,7 @@ p {
   text-decoration: none;
 }
 .container {
-  width: 1158px;
+  max-width: 1158px;
   margin-right: auto;
   margin-left: auto;
   padding-right: 15px;
@@ -60,6 +60,7 @@ button {
   color: #4d5ae5;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 24px 0;
   margin-right: 76px;
 }
 .span-logo {
@@ -204,8 +205,9 @@ button {
 .features {
   padding-top: 120px;
   padding-bottom: 120px;
-  /* max-width: 1440px; */
+  max-width: 1440px;
   background-color: #f4f4fd;
+  margin: 0 auto;
 }
 .visually-hidden {
   position: absolute;
@@ -261,10 +263,11 @@ button {
 /* #region team */
 
 .team {
-  /* max-width: 1440px; */
+  max-width: 1440px;
   background-color: #f4f4fd;
   padding-top: 120px;
   padding-bottom: 120px;
+  margin: 0 auto;
 }
 .team-title {
   font-size: 36px;
@@ -423,8 +426,11 @@ button {
 /* #endregion */
 /* #region portfolio */
 .portfolio {
+  max-width: 1440px;
+  background-color: #f4f4fd;
   padding-top: 120px;
   padding-bottom: 120px;
+  margin: 0 auto;
 }
 .portfolio-title {
   font-size: 36px;
