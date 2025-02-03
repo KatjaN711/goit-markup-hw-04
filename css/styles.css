@@ -350,7 +350,7 @@ button {
   fill: #f4f4fd;
 }
 
-/* .team {
+.team {
   background-color: #f4f4fd;
   padding-top: 120px;
   padding-bottom: 120px;
@@ -425,7 +425,7 @@ button {
 .icon-link:hover,
 .icon-link:focus {
   background-color: #404bbf;
-} */
+}
 /* #endregion */
 /* #region portfolio */
 .portfolio {
@@ -630,6 +630,10 @@ footer .span-logo {
   position: absolute;
   top: 24px;
   right: 24px;
+  width: 24px;
+  height: 24px;
+  border: 0.5 solid;
+  border-radius: 50%;
 }
 .modal-title {
   font-weight: 500;
@@ -640,15 +644,22 @@ footer .span-logo {
   color: #2e2f42;
   margin-bottom: 16px;
 }
+.input-wrap {
+  position: relative;
+}
 .modal-input {
   width: 100%;
   height: 40px;
   border: 1px solid #2e2f42;
   border-radius: 4px;
-  margin-bottom: 16px;
   background-color: transparent;
   padding-left: 38px;
   padding-right: 24px;
+  border-color:#2e2f42;
+}
+
+.modal-field {
+  margin-bottom: 8px;
 }
 .modal-label {
   font-size: 12px;
@@ -656,4 +667,30 @@ footer .span-logo {
   letter-spacing: 0.04em;
   color: #8e8f99;
   margin-bottom: 4px;
+}
+.modal-input-icon {
+  fill: #2e2f42;
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.modal-input:focus {
+  border-color: #4d5ae5;
+}
+.modal-input:focus + .modal-input-icon {
+  fill:#4d5ae5;
+}
+.modal-textarea {
+  width: 100%;
+  height: 120px;
+  border: 1px solid #2e2f42;
+  border-radius: 4px;
+  background-color: transparent;
+  padding: 8px 16px;
+  border-color:#2e2f42;
+  resize: none;
+}
+.modal-text-area::placeholder {
+  font-size: 12px;
 }
