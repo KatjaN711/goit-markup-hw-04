@@ -613,6 +613,14 @@ footer .span-logo {
   /* display: flex;
   align-items: center;
   justify-content: center;  */
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 .modal {
   width: 408px;
@@ -693,4 +701,29 @@ footer .span-logo {
 }
 .modal-text-area::placeholder {
   font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
 }
+.policy-label {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8E8F99;
+}
+.modal-check-item {
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px solid #2E2F42;
+}
+.policy-text {
+  line-height: 1.33;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #4d5ae5;
+  display: flex;
+  align-items: center;
+}
+
+
