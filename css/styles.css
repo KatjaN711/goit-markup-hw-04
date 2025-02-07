@@ -510,9 +510,12 @@ button {
 /* #region footer */
 .footer {
   max-width: 1440px;
+  max-height: 312px; 
   background-color: #2e2f42;
   margin-right: auto;
   margin-left: auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .footer .items-foot {
   display: flex;
@@ -525,7 +528,6 @@ button {
   flex-direction: column;
   justify-content: center;
   background-color: #2e2f42;
-  min-height: 312px;
   padding-left: 156px;
   margin-right: 120px;
 }
@@ -640,8 +642,15 @@ footer .span-logo {
   right: 24px;
   width: 24px;
   height: 24px;
-  border: 0.5 solid;
+  /* border: 0.5 solid; */
+  border: none;
   border-radius: 50%;
+  fill:#2e2f42;
+  background-color: #e7e9fc;
+}
+.modal-close:hover {
+  fill: #ffffff;
+  background-color: #404bbf;
 }
 .modal-title {
   font-weight: 500;
@@ -705,17 +714,31 @@ footer .span-logo {
   letter-spacing: 0.04em;
   color: #2e2f42;
 }
-.policy-label {
+.modal-check-text {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8E8F99;
+  display: flex;
+  align-items: center;
 }
 .modal-check-item {
   width: 16px;
   height: 16px;
   border-radius: 2px;
   border: 1px solid #2E2F42;
+  display: block;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+.modal-check:checked + .modal-check-text .modal-check-item {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
+
 }
 .policy-text {
   line-height: 1.33;
@@ -725,5 +748,24 @@ footer .span-logo {
   display: flex;
   align-items: center;
 }
-
+.modal-button {
+  display: block;
+  margin: 24px auto;
+  width: 169px;
+  height: 56px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #ffffff;
+  background: #4d5ae5;
+  border-radius: 4px;
+  padding: 16px 32px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+.modal-button:hover {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: #404bbf;
+}
 
