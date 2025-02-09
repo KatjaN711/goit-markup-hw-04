@@ -37,7 +37,6 @@ button {
 }
 /* #region header */
 .header {
-  max-width: 1440px;
   background-color: #ffffff;
   margin: 0 auto;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
@@ -149,6 +148,7 @@ button {
 /* #endregion */
 /* #region hero */
 .hero {
+  max-width: 1440px;
   background-color: #2e2f42;
   display: flex;
   flex-direction: column;
