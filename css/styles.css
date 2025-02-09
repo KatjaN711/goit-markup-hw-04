@@ -289,7 +289,6 @@ button {
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
-  background: var(--white);
 }
 .team-member {
   display: flex;
@@ -360,13 +359,7 @@ button {
   color: #2e2f42;
   margin-bottom: 72px;
 }
-/* .team-list {
-  display: flex;
-  width: 264px;
-  height: 428px;
-  gap: 24px;
-  justify-content: space-around;
-} */
+
 .team-item {
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
@@ -394,15 +387,7 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
 }
-/* .social-icons {
-  width: 232px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
-  margin: auto;
-} */
+
 .icon-link {
   display: flex;
   justify-content: center;
@@ -550,12 +535,7 @@ footer .span-logo {
   letter-spacing: 0.02em;
   color: #f4f4fd;
 }
-.social-media {
-  /* display: flex; */
-  flex-direction: column;
-  /* width: 208px;
-  height: 80px; */
-}
+
 .media-foot {
   font-weight: 500;
   font-size: 16px;
